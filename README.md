@@ -46,13 +46,13 @@ jobs:
         run: npm install # or yarn / bun...
 
       - name: Deploy iOS to AppZung CodePush
-        uses: appzung/github-action-deploy-to-appzung-codepush@v1
+        uses: AppZung/github-action-deploy-to-appzung-codepush@v1.0.0
         with:
           api-key: ${{ secrets.APPZUNG_API_KEY }}
           release-channel: 'staging/c95d7950-228c-4f47-8abb-4e275050ca8e'
       
       - name: Deploy Android to AppZung CodePush
-        uses: appzung/github-action-deploy-to-appzung-codepush@v1
+        uses: AppZung/github-action-deploy-to-appzung-codepush@v1.0.0
         with:
           api-key: ${{ secrets.APPZUNG_API_KEY }}
           release-channel: 'staging/4ffe006a-567e-491b-b3e4-2830087ff980'
